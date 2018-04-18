@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../../prototype/source/css/scss/style.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

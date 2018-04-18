@@ -1,13 +1,10 @@
-/* global rs:true */
-/* eslint no-undef: "error" */
 // Namespace
-var $ = require('jquery');
+// var $ = require('jquery');
 
-function init() {}
-
-// Initialize module
-init();
-
-exports.exportedFunction = function () {
-  console.log('export');
-}
+module.exports = {
+  init: function() {
+    console.log('init <filename>');
+    let _this = this;
+    console.log(_this);
+  }
+};
