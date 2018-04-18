@@ -19,7 +19,9 @@
     "start": "gulp patternlab:serve",
     "postinstall": "node scripts/postinstall.js",
     "gulp": "gulp -- ",
-    "gulpTest": "gulp js:build"
+    "prototype:build": "gulp build",
+    "gulpTest": "gulp patternlab:build",
+    "gulpLint": "gulp js:lint"
   },
   "license": "MIT",
   "engines": {
@@ -31,19 +33,25 @@
     "gulp": "gulpjs/gulp#4.0",
     "jquery": "^3.2.1",
     "minimist": "^1.2.0",
+    "object-fit-images": "^3.2.3",
     "patternlab-node": "^2.0.0",
     "slick-carousel": "^1.8.1",
     "styleguidekit-assets-default": "^3.0.0",
     "styleguidekit-mustache-default": "^3.0.0"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
     "foundation-sites": "^6.4.4-rc1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-browserify": "^0.5.1",
+    "gulp-eslint": "^4.0.2",
     "gulp-load-plugins": "^1.5.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
-    "inuitcss": "^6.0.0-beta.5"
+    "inuitcss": "^6.0.0-beta.5",
+    "vinyl-source-stream": "^2.0.0"
   }
 }
